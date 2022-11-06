@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- style start -->
+    <style>
+        .nav {margin-top: 15px;
+            top: 0px;
+            position: sticky;
+            background-color: #e6ebe7;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .new{height: auto;
+            width: 130px;
+            position: fixed;
+            bottom: 50vh;
+            right: 10px;
+            border-radius: 35px;
+        }
+        ul {
+            list-style-type: none;
+            margin-left: 10px;
+            
+        }
+
+        li {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 30px 10px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn {
+            margin: 30px auto;
+            padding: 10px 30px;
+        }
+
+        .b1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            margin: 30px auto;
+            width: 76%;
+        }
+
+        h1 {
+            color: black;
+            font-weight: bolder;
+            font-size: 50px;
+
+        }
+
+        h3 {
+            font-weight: bolder;
+        }
+
+        span {
+            color: green;
+        }
+
+        .size {
+            width: 500px;
+        }
+
+        #p:hover {
+            background-color: #c45179;
+            border: red;
+        }
+
+        #p {
+            background-color: green;
+            margin-top: 10px;
+            color: white;
+            opacity: 1;
+        }
+
+        .middle {
+            background-color: #bdbdbd;
+            border-top: 6px solid green;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+            border-bottom: 6px solid green;
+            border-bottom-left-radius: 18px;
+            border-bottom-right-radius: 18px;
+
+        }
+
+        .box {
+            height: 485px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        #a1 {
+            background-color: white;
+            border-radius: 9px;
+            width: 441px;
+            height: auto;
+            padding: 15px;    
+        }
+        /* #a1 img{
+            height: 30vh;
+            object-fit: cover;
+        }*/
+               #a2 {
+            border-radius: 9px;
+            background-color: white;
+            width: 441px;
+            height: auto;
+            padding: 15px;
+        }
+
+        .k2 {
+            width: 600px;
+            height: 150px;
+            padding: 15px;
+            text-align: center;
+            font-weight: bolder;
+            margin: 20px auto 0px;
+            justify-items: center;
+        }
+
+        img {
+            border-radius: 9px;
+        }
+
+        h2 {
+            font-weight: bolder;
+        }
+
+        #o {
+            height: auto;
+            width: 11%;
+            margin: 2px auto;
+
+        }
+
+        #i {
+            background-color: black;
+            border: 2px solid green;
+        }
+
+        .center {
+            border-top: 6px solid #272447;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+            background-color: #272447;
+            padding: 30px;
+            overflow: hidden;
+        }
+
+        .center video {
+            float: left;
+            margin: 50px 0px 50px 60px;
+            border-radius: 15px;
+        }
+
+        .j {
+            color: white;
+            width: 460px;
+            float: right;
+            height: 340px;
+            margin-right: 90px;
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        h1 {
+            color: green;
+        }
+
+        #w {
+            display: flex;
+
+            padding: 20px;
+            justify-content: space-around;
+        }
+
+        section {
+            background-color: #b0afac;
+            padding: 10px;
+            width: 24%;
+            outline-style: groove;          
+            border-radius: 9px;
+        }
+
+        section:hover {
+            border-radius: 12px;
+            opacity: 1;
+            border: 2px solid green;
+        }
+
+
+        .same {
+
+            font-size: 50px;
+        }
+
+        #cr {
+            margin-left: 120px;
+
+        }
+
+        .footer {
+            padding: 20px;
+            background-color: #9797ce;
+            height: 100px;
+        }
+        #li {
+            float: left;
+            margin: 20px 20px 0px;
+            display: inline-block;
+        }
+        a {
+            margin-left: 30px;
+            padding: 20px 0px;
+            color: rgb(5, 5, 5);
+            text-decoration: none;
+        }
+        #multimedia {
+            float: right;
+            margin-right: 50px;
+        }
+        .ok {
+            margin-left: 10px;
+            height: 60px;
+            width: 60px;
+            border-radius: 50px;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div>
+            <img id="first" src="fun-food-logo.webp" alt="" height="100px" width="auto">
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Magazine</a></li>
+                <li><a href="#">support</a></li>
+                <li> <a href="#">Other Solutions</a> </li>
+                
+            </ul>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success">Login</button>
+        </div>
+    </div>
+
+
+
+    <div class="b1">
+        <div class="size">
+            <h3>Increase Your Food Sales By Owning</h3>
+            <h1><span>Reliable</span>& Feature Rich <span> Website </span></h1>
+            <h3>Boost Your Online Visibility by 50% & Get New Customers</h3>
+            <button type="button" id="p" class="btn btn-lg btn-primary">Start Your Free Trial</button>
+        </div>
+        <div><img src="shutterstock_1564304260-1000x600.jpg" alt="" height="300px" width="auto"></div>
+        <img src="fast.png" alt="" class="new">
+    </div>
+    <div class="middle">
+
+        <div class="k2">
+            <h2>Happy <span>Stories</span></h2>
+            <p>ust take a quick peek & learn about the Amazing Stories of our Valued Clients. Nothing makes us
+                happier than their Beautiful & Successful Journey with Eatance!</p>
+        </div>
+        <div class="box">
+            <div id="a1">
+                <h3>Gokul Restaurant :</h3>
+                <span>
+                    <h5>Multi-Cuisine Garden Restaurant</h5>
+                </span>
+                <p>Gokul Restaurant is a Multi-Cuisine Dinner specializing in Indian Food located in Ahmedabad -
+                    Gandhinagar highway. This (Lorem ipsum dolor sit, amet consectetur adipisicing elit. In! ipsum dolor
+                    sit amet consectetur.) </p>
+                <img src="index.jpg" alt=" " height="270px" width="410px">
+            </div>
+            <div id=a2>
+                <h3>Actiwines :</h3>
+                <span>
+                    <h5>On-Demand Liquor Delivery App</h5>
+                </span>
+                <p>One of the French Liquor store Actiwines needed a solution to automate their whole supply
+                    chain from inventory and vendor assignment through ordering and delivery. </p>
+                <img src="OIP.jpg" alt="" height="270px" width="410px">
+            </div>
+        </div>
+        <div id="o">
+            <button type="button" class="btn btn-danger">View More</button>
+        </div>
+    </div>
+    <div class="center">
+        <video src="restaurant.mp4" autoplay muted loop height="320px" ></video>
+        <div class="j">
+            <h1>See how it works for your restaurant.</h1>
+            <p>We have Precisely crafted Sales Optimized Restaurant Website themes with beautiful design & fantastic
+                User Experience while taking care of essential things to make your Restaurant or Food Business
+                Successful & Happy!</p>
+            <button id="i" type="button" class="btn btn-dark">See More</button>
+        </div>
+
+    </div>
+    <div class="log">
+        <div class="k2">
+            <h1>Happy <span>Customers</span></h1>
+            <p>Eatance has turned Numerous Restaurants & Food Businesses Happy & Successful. Here's what our Clients say
+                About Us!</p>
+        </div>
+        <div id="w">
+            <section>
+                <span class="same">"</span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam cupiditate possimus vero, error
+                    soluta neque labore odit illum impedit quis nihil accusamus, repudiandae culpa a veritatis fuga
+                    consequuntur ipsum. Ipsam harum eligendi iste sunt ipsum, tenetur qui facere voluptate odit!</p>
+                <img id="cr" src="happycustmer.jpg" alt="" height="80px" width="80px">
+            </section>
+            <section>
+                <span class="same">"</span>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam cupiditate possimus vero, error
+                    soluta neque labore odit illum impedit quis nihil accusamus, repudiandae culpa a veritatis fuga
+                    consequuntur ipsum. Ipsam harum eligendi isunipsum, tenetur qui facere voluptate odit!</p>
+                <img id="cr" src="happycustmor.jpg".png" alt="" height="80px" width="80px">
+            </section>
+            <section>
+                <span class="same">"</span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam cupiditate possimus vero, error
+                    soluta nequlabore odit illum impedit quis nihil accusamus, repudiandae culpa a veritatis fuga
+                    consequuntur ipsum. Ipsam harum eligendi iste suntipsutenetur qui facere voluptate odit!</p>
+                <img id="cr" src="Professional-Mystery-Shopper-The-Hart-Experience-Fresh-Perspectives-on-the-Customer-Experience-7-1024x683.jpg" alt="" height="80px" width="80px">
+            </section>
+        </div>
+    </div>
+    <div class="footer">
+        <ul id="li">
+            <a href="#">Copyright&copy;2022</a>
+            <a href="#">Pricing</a>
+            <a href="#">Disclaimer</a>
+            <a href="#">Privacy Policy</a>
+            
+        </ul>
+        <div id="multimedia">
+            <i>Follow us on:-</i>
+            <img class="ok" src="netflix.jpg" alt=""><img class="ok" src="youtube.jpg"
+                alt=""><img class="ok" src="twitter.jpg" alt=""><img class="ok"
+                src="link.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
